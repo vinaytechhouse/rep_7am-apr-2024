@@ -1,0 +1,65 @@
+Technical Design for the one week sprint [end-end process]:
+
+Power BI Desktop Level: [you need to open Power BI Desktop and Perform the below operations]
+
+1) Yearly Report: Yearly insights + Mobile view
+	Open Power BI Desktop, name the document as Yearly_Report.pbix, and implement the below
+
+	a) Sources, connections, credentials:
+		Vinay Tech Business Excel.xlsx, DimDate, Factpayments, DimLocation
+	b) Transformations needed
+		Year and Month concat
+
+	c) Model relationships, Directions
+			DimDate, Factpayments, DimLocation
+
+	d) Model Calculations
+		1. Measure: Total DF, Avg DF, Count Std, DF Cumulative Total, DF-current, last, growth,Two years prior, Total Tax Amount
+		2. Column
+		3. Table
+	e) Visuals needed:
+		Page Size: 16*9, 	BG Color: Light Green, Company logo[image],Company Address [Textbox]
+		Year filter[Slicer], 3 Card Visuals, Table Visual [Years and Cumulative DF], Pie chart(composition and compare),
+		Table [year wise current, last, growth, two years prior], Matrix [Year, Quarter Vs. State and District],
+		Line chart[year wise tax amount trend analysis], Bubble chart(Location wise DF)
+     
+	f)  Reporting Concepts needed
+		Company logo action [URL action]
+		Bookmarks [bookmarks for 2017, 2018, 2019]
+		Mobile view for yearly report
+		Cross report drill through [Drill through from yearly report]
+
+2) Monthly Report: Monthly Insights+ Non Mobile-View
+	a) Sources, connections, credentials
+	b) Transformations needed
+	c) Model relationships, Directions
+
+	d) Model Calculations
+		1. Measure
+		2. Column
+		3. Table
+	e) Visuals needed
+	f)  Reporting Concepts needed
+
+
+
+3) Yearly -Monthly Report Navigation
+
+
+
+Power BI Service Level: [You should move report to cloud and do the below operations]
+
+Technical Identification for each scenario:
+
+a) On-Premise Vinay Tech Business file data changes should refresh in the cloud both the ways 
+		1. On-Demand 2. Scheduled
+
+b) Daily Data Changing at 5 am at source, Put a refresh schedule for the dataset at 5.30 am and share the report at 6 am.
+c)  Reports easy sharing to the customer
+d) Move reports from Dev->Test, Test->Prod, also assign users to roles
+e) Maintaining versioning in GitHub
+
+
+
+
+
