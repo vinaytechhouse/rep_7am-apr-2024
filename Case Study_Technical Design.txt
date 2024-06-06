@@ -1,12 +1,16 @@
+Power BI Session:
+
 Technical Design for the one week sprint [end-end process]:
 
 Power BI Desktop Level: [you need to open Power BI Desktop and Perform the below operations]
 
 1) Yearly Report: Yearly insights + Mobile view
+
 	Open Power BI Desktop, name the document as Yearly_Report.pbix, and implement the below
 
 	a) Sources, connections, credentials:
 		Vinay Tech Business Excel.xlsx, DimDate, Factpayments, DimLocation
+
 	b) Transformations needed
 		Year and Month concat
 
@@ -14,7 +18,9 @@ Power BI Desktop Level: [you need to open Power BI Desktop and Perform the below
 			DimDate, Factpayments, DimLocation
 
 	d) Model Calculations
-		1. Measure: Total DF, Avg DF, Count Std, DF Cumulative Total, DF-current, last, growth,Two years prior, Total Tax Amount
+1. Measure: Total DF, Avg DF, Count Std, DF Cumulative Total, DF-current, last, growth,Two years prior, Total Tax 
+
+Amount
 		2. Column
 		3. Table
 	e) Visuals needed:
